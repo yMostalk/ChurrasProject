@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Churras</string>
+
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Ou crie uma conta</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="title_avaliar">Avaliar</string>
+    <string name="title_confirmarp">Confirmar Pagamentos</string>
+    <string name="deslogar">Deslogar</string>
+
+</resources>

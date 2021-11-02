@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaPagamento">
+
+    <ImageView
+        android:id="@+id/logos"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logowhite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagamentos"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="italic"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logos"
+        />
+
+    <ImageView
+        android:id="@+id/FotoMaicon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/maicon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/logos"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/FotoRian"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/eduardo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/FotoMaicon"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/FotoJaleko"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/jaleko"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/FotoRian"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/FotoMarcus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/marcus"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/FotoJaleko"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/NomeMaicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maicon B.  "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:drawableRight="@drawable/ic_certo"
+        app:layout_constraintTop_toBottomOf="@id/logos"
+        app:layout_constraintStart_toEndOf="@id/FotoMaicon"
+        />
+
+    <TextView
+        android:id="@+id/NomeRian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eduardo A.  "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_errado"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@id/FotoMaicon"
+        app:layout_constraintStart_toEndOf="@id/FotoRian"
+        />
+
+    <TextView
+        android:id="@+id/NomeAlexandre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alexandre R.  "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:drawableRight="@drawable/ic_certo"
+        app:layout_constraintTop_toBottomOf="@id/FotoRian"
+        app:layout_constraintStart_toEndOf="@id/FotoMaicon"
+        />
+
+    <TextView
+        android:id="@+id/NomeMarcus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcus T.  "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:drawableRight="@drawable/ic_certo"
+        app:layout_constraintTop_toBottomOf="@id/FotoJaleko"
+        app:layout_constraintStart_toEndOf="@id/FotoMaicon"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotaoConfirmarP"
+        style="@style/Button"
+        android:text="@string/title_confirmarp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomeMarcus"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

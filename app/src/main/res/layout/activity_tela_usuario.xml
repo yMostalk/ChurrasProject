@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaUsuario">
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents5"
+        app:layout_constraintTop_toBottomOf="@id/FotoAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/FotoAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kaike"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iconeNome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintTop_toBottomOf="@id/FotoAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaike Damasceno Lima"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/FotoAvatar"
+        app:layout_constraintStart_toEndOf="@id/iconeNome"
+        />
+
+    <ImageView
+        android:id="@+id/iconeIdade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_idade"
+        app:layout_constraintTop_toBottomOf="@id/iconeNome"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoIdadeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21 Anos"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TextoNomeUsuario"
+        app:layout_constraintStart_toEndOf="@id/iconeIdade"
+        />
+
+
+    <ImageView
+        android:id="@+id/iconeCPF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_cpf"
+        app:layout_constraintTop_toBottomOf="@id/iconeIdade"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoCPFUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="143.678.463.90"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TextoIdadeUsuario"
+        app:layout_constraintStart_toEndOf="@id/iconeCPF"
+        />
+
+    <ImageView
+        android:id="@+id/iconeTelefone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_telefone"
+        app:layout_constraintTop_toBottomOf="@id/iconeCPF"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoTelefoneUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(31) 98764-1083"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TextoCPFUsuario"
+        app:layout_constraintStart_toEndOf="@id/iconeTelefone"
+        />
+
+    <ImageView
+        android:id="@+id/iconeEndereco"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_endereco"
+        app:layout_constraintTop_toBottomOf="@id/iconeTelefone"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextoEnderecoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rua Amapá, n31, Centro"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TextoTelefoneUsuario"
+        app:layout_constraintStart_toEndOf="@id/iconeEndereco"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotaoEntrar"
+        style="@style/ButtonDeslogar"
+        android:text="@string/deslogar"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextoEnderecoUsuario"
+        />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_lixeira"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="370dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
