@@ -14,6 +14,7 @@
     android:background="@drawable/background"
     tools:context=".FormLogin">
 
+    //Background dos textos
     <View
         android:id="@+id/containerComponents"
         style="@style/ContainerComponents"
@@ -22,6 +23,7 @@
         app:layout_constraintTop_toBottomOf="@id/logo"
         />
 
+    //Campos de texto da tela
     <EditText
         android:id="@+id/edit_cpf"
         style="@style/Edit_Text"
@@ -47,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@id/edit_cpf"
         />
 
+        //Button Entrar do App
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/BotaoEntrar"
             style="@style/Button"
@@ -57,7 +60,7 @@
             />
 
 
-
+    //Imagem do Icone na Tela
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"
@@ -69,6 +72,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    //Estilo e Formatação do texto
     <TextView
         android:id="@+id/text_tela_cadastro"
         android:layout_width="wrap_content"

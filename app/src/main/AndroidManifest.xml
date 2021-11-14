@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Churras">
         <activity
+            android:name=".FormEditar"
+            android:exported="false" />
+        <activity
             android:name=".TelaPagamento"
             android:exported="false" />
         <activity

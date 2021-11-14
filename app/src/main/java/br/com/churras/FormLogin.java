@@ -21,6 +21,7 @@ public class FormLogin extends AppCompatActivity {
         getSupportActionBar().hide();
         IniciarComponentes();
 
+        //Comandos para trocar de tela
         text_tela_cadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
